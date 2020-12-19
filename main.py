@@ -99,7 +99,8 @@ def decode_jwt():
 
     response = {'email': data['email'],
                 'exp': data['exp'],
-                'nbf': data['nbf'] }
+                'nbf': data['nbf'], 
+                'message': 'You are an autherized user' }
     return jsonify(**response)
 
 
